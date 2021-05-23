@@ -1,10 +1,11 @@
 import React from 'react';
-
-
-const ListItem=()=>{
-    return <>
-    </>
+const ListItem = ({todo,id})=>{
+    const handleClickMe = () => {
+        console.log({id})
+      };
+    return(
+        <> <ul><li  onClick={handleClickMe}> {todo} {id} </li></ul> 
+        </>
+    )
 }
-
-export default ListItem ;
-
+export  default ListItem;
